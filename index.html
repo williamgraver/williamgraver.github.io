@@ -1,49 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" class="fp-enabled" style="overflow: hidden; height: 100%;">
-<head>
+<html lang="en">
+    <head>
 
-	<title>Portfolio - William Graver </title>
+        <title>Portfolio - William Graver </title>
 
-	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://www.youtube.com">
-    
-	<!-- <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com"> -->
-
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<meta charset="utf-8">
-	<meta name="author" content="Wiliam Graver">
-	<meta name="description" content="My name is William, I'm a french IT student looking for oportunities.">
-
-	<meta property="og:title" content="williamgraver.github.io">
-	<meta property="og:type" content="website">
-	<meta property="og:description" content="My name is William, I'm a french IT student looking for oportunities.">
-	<!-- <meta property="og:image" content="https://dullneon.com/d.twelve/img/mugshot-not-found.png"> -->
-	<meta property="og:url" content="http://williamgraver.github.io">
-	<!-- <meta name="twitter:card" content="At the time of writing, Jaffry does not yet have the requisite wit to craft funny-yet-insightful meta content"> -->
-	<!-- <meta name="twitter:site" content="@dullneon">
-	<meta name="twitter:creator" content="@jaffry"> -->
-
-
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600,800&amp;display=swap&amp;subset=latin-ext" rel="stylesheet"> 
-    
-</head>
-<body>
-    <div id="fullpage">
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-
-            });
-        });
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://www.youtube.com">
         
-    </script>
-</body>
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="fullpage.css"/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta charset="utf-8">
+        <meta name="author" content="Wiliam Graver">
+        <meta name="description" content="My name is William, I'm a french IT student looking for oportunities.">
+
+        <meta property="og:title" content="williamgraver.github.io">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="My name is William, I'm a french IT student looking for oportunities.">
+        <meta property="og:image" content="profile.jpg">
+        <meta property="og:url" content="http://williamgraver.github.io">
+        <!-- <meta name="twitter:card" content="At the time of writing, Jaffry does not yet have the requisite wit to craft funny-yet-insightful meta content"> -->
+        <!-- <meta name="twitter:site" content="@dullneon">
+        <meta name="twitter:creator" content="@jaffry"> -->
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600,800&amp;display=swap&amp;subset=latin-ext" rel="stylesheet"> 
+        
+    </head>
+    <body style="overflow: hidden; height: 100%;" class="fp-viewing-firstPage">
+        <div id="fullpage">
+                <div class="section " id="section0">
+                    <div class="intro">
+                        <h1>Portfolio de William Graver</h1>
+                        <p>Étudiant et passionné, je vous présente mon portfolio avec l'ensemble de mes compétences et expériences</p>
+                        <p>Vous pouvez télécharger mon cv juste <a href="CV.pdf" target="_blank">ici</a></p>
+                    </div>
+                </div>
+                <div class="section" id="section1">
+                    <div class="slide" id="slide1">
+                        <div class="intro">
+                            <h2>Mon expérience</h2>
+                            <p>
+                                Vous pouvez retrouver l'ensemble de mes expériences professionnelles
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="slide" id="slide2">
+                        <h1>Slide 2</h1>
+                    </div>
+            
+                </div>
+                <div class="section" id="section2">
+                    <div class="intro">
+                        <h2>Enjoy it</h2>
+                    </div>
+                </div>
+            </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    // controlArrows: true,
+                    css3:true,
+                    sectionsColor: ['#333', '#4BBFC3', '#7BAABE', 'whitesmoke', 'yellow'],
+                    anchors: ['intro', 'project', 'experiences', 'realisations', 'formation'],
+	                // menu: '#menu',
+                    navigation:true,
+                    navigationPosition: 'right',
+                    //  navigationTooltips: ['First page', 'Second page', 'Third and last page']
+                     });
+            });
+            
+        </script>
+    </body>
 
 </html>
