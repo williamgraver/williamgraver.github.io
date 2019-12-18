@@ -3,9 +3,10 @@ body {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.fp-tableCell {
+.fp-tableCell  .year-container {
 	vertical-align: unset !important;
 }
+
 
 
 
@@ -15,6 +16,12 @@ p {
 
 .content-line {
 	display: inline-block;
+	color: white;
+}
+
+.description{
+	width: 86%;
+    margin: 0 auto;
 }
 
 /* .year {
