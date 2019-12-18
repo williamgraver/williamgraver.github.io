@@ -7,7 +7,9 @@ body {
 	vertical-align: unset !important;
 }
 
-
+.logo-img{
+	width: 100px;
+}
 
 
 p {
@@ -17,11 +19,13 @@ p {
 .content-line {
 	display: inline-block;
 	color: white;
+	font-weight: bold;
 }
 
 .description{
 	width: 86%;
-    margin: 0 auto;
+	margin: 0 auto;
+	color: white;
 }
 
 /* .year {
