@@ -3,11 +3,11 @@ body {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.fp-tableCell  .year-container {
+.fp-tableCell .year-container {
 	vertical-align: unset !important;
 }
 
-.logo-img{
+.logo-img {
 	width: 100px;
 }
 
@@ -22,7 +22,7 @@ p {
 	font-weight: bold;
 }
 
-.description{
+.description {
 	width: 86%;
 	margin: 0 auto;
 	color: white;
@@ -310,7 +310,12 @@ acronym {
 }
 
 
+/* 
 
+Felicitations, si tu es arrivé jusque là c'est que tu t'es déjà bien creusé les méninges. 
+Le chemin est bientôt terminé tu devras encore chercher un petit peu :) 
+MS-NYmn9suc
+*/
 /* Demos Menu
  * --------------------------------------- */
 #demosMenu {
