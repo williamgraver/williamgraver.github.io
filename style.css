@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0 8%;
 }
-.header .top {
+.top {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -14,12 +14,35 @@
   margin-top: 55px;
 }
 
-.header .logo {
+.logo {
   margin: 0;
+}
+.navbar {
+  background-color: transparent !important;
   font-family: Azonix;
 }
 
-.header .description {
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+    /* padding-right: 100px; */
+  }
+
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    /* margin: 0px 200px; */
+  }
+}
+
+@media (min-width: 1815px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    margin: 0px 400px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+    padding-right: 100px;
+  }
+}
+.description {
   max-width: 400px;
   margin-top: 70px;
   font-size: 21px;
@@ -28,10 +51,10 @@
   text-align: justify;
 }
 
-.header .heading.animate {
+.heading.animate {
   box-shadow: inset 0 -10px 0 #fff, inset 0 -25px 0 #ff0059;
 }
-.header .heading {
+.heading {
   font-weight: 900;
   font-size: 55px;
   color: #000;
@@ -40,24 +63,21 @@
 }
 
 .header {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
-  padding-bottom: 100px;
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 800;
-}
-
-.experience {
-  background: #191a1d;
 }
 
 body {
   font-family: Timeless, Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: Azonix;
+}
 @font-face {
   font-family: Azonix;
   src: url("./fonts/Azonix.otf");
@@ -67,3 +87,76 @@ body {
   font-family: Timeless;
   src: url("./fonts/Timeless.ttf");
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.hover-animated:hover {
+  box-shadow: inset 0 -10px 0 #fff, inset 0 -20px 0 #007bff;
+  transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.3s;
+}
+
+/* Experiences */
+.experiences {
+  background: #191a1d;
+  margin-top: 251px;
+}
+
+.cards-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.experience-column {
+  position: relative;
+  top: -150px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.card {
+  -webkit-font-smoothing: antialiased;
+  background: #0b0c0d;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  height: 100%;
+}
+
+.details {
+  padding: 50px 40px 60px 40px;
+}
+
+@media (max-width: 1160px) {
+  .card {
+    width: calc(50% - 4vw);
+  }
+}
+
+.card {
+  width: calc(50% - 50px);
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12vw;
+}
+
+.left-card {
+  margin-top: 100px;
+}
+/* Tacos du soir (:
+  Tacos double
+  falafel poulet curry
+  Sauce blanche
+
+*/
