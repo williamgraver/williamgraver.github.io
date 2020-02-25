@@ -22,6 +22,12 @@
       content="IRYBadSCLv160gPNTKdOYtp_ccky64y2DIi2zAK2AWw"
     />
     <title>Portfolio - William Graver</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://www.youtube.com" />
@@ -45,38 +51,508 @@
     />
     <meta property="og:image" content="profile.jpg" />
     <meta property="og:url" content="http://williamgraver.github.io" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600,800&amp;display=swap&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
+    <!-- <meta name="twitter:card" content="At the time of writing, Jaffry does not yet have the requisite wit to craft funny-yet-insightful meta content"> -->
+    <!-- <meta name="twitter:site" content="@dullneon">
+        <meta name="twitter:creator" content="@jaffry"> -->
   </head>
 
-  <body style="overflow: hidden; height: 100%;" class="fp-viewing-firstPage">
+  <body style="height: 100%;" class="fp-viewing-firstPage">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <h1 class="logo hover-animated">
+        <a href="/">William Graver</a>
+      </h1>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item active hover-animated">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item hover-animated">
+            <a class="nav-link" href="#experiences">Experiences</a>
+          </li>
+
+          <li class="nav-item hover-animated">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+
+          <li class="nav-item hover-animated">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item hover-animated">
+            <a class="nav-link" href="./CV.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <header class="header">
       <div class="col-900">
-        <div class="top">
-          <h1 class="logo">
-            <a href="/">
-              Work in progress, new website will arrive soon
-            </a>
-          </h1>
-        </div>
         <div class="content">
-          <span class="heading">I'm a web developer. 🌵</span>
+          <span class="heading">I'm a web developer.</span>
           <p class="description">
-            Testing multi page : <a href="foo.html">it's a test</a>
+            Hi, my name is William Graver and I'm a french developer searching
+            for a job in Montréal, CA. I've been passionated by IT since my
+            early years, I've study it and now I love it even more. <br />PS : I
+            already got my work visa !!!
           </p>
         </div>
       </div>
     </header>
-    <section class="experience"></section>
+    <section class="experiences">
+      <svg
+        class="top-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon fill="white" points="100,0 0,50 0,0"></polygon>
+      </svg>
 
+      <div class="column experience-column">
+        <h2 id="experiences">Experiences</h2>
+        <div class="cards-content">
+          <div class="card left-card">
+            <img
+              class="image"
+              src="./img/Cognizant-Logo.png"
+              srcset="./img/Cognizant-Logo.png 2x"
+              alt="Cognizant logo"
+            />
+            <div class="details">
+              <div class="poste">Spring Boot / React developer</div>
+              <div class="more-details">
+                June 2019 - August 2019
+              </div>
+              <p class="description-experience">
+                Standalone projet where I've been asked to provide improved KPIs
+                for projects managed with Jira
+              </p>
+              <div class="jobs">
+                <span>Main jobs :</span>
+                <ul>
+                  <li class="job">
+                    Backend extracting data from Jira API and storing on a MySQL
+                    server and providing API to client-side, secure
+                    communication
+                  </li>
+                  <li class="job">
+                    KPI's definition, authentication, and display with recharts
+                    library
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <div class="tools">
+                  <span>
+                    Tools : Git, SonarQube, Docker
+                  </span>
+                </div>
+                <div class="name">Internship</div>
+                <div class="more">3 months</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="image"
+              src="./img/biboard-logo.svg"
+              srcset="./img/biboard-logo.svg 2x"
+              alt="Biboard logo"
+            />
+            <div class="details">
+              <div class="poste">.NET / Angular Developer</div>
+              <div class="more-details">
+                (Current) September 2019 - September 2020
+              </div>
+              <p class="description-experience">
+                In a R&D team, I work for the improvement of the Business
+                Intelligence solution, BiBoard, by development of self-bi
+              </p>
+              <div class="jobs">
+                <span>Main jobs :</span>
+                <ul>
+                  <li class="job">
+                    Provide interface for edition of dashboards layouts
+                    depending on the choosen XML layout (.NET Core)
+                  </li>
+                  <li class="job">
+                    Provide interface for edition of dashboards components, work
+                    is based on ngx-graph library (Angular 8)
+                  </li>
+                  <li class="job">
+                    UI/UX work to provide a more intuitive web app
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <div class="tools">
+                  <span>
+                    Tools : Git, SonarQube
+                  </span>
+                </div>
+                <div class="name">Work-study contract</div>
+                <div class="more">1 year</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-content second-row">
+          <div class="card left-card">
+            <img
+              class="image"
+              src="./img/ciril-logo.png"
+              srcset="./img/ciril-logo.png 2x"
+              alt="Ciril logo"
+            />
+            <div class="details">
+              <div class="poste">Java developer</div>
+              <div class="more-details">
+                January 2017 + June - August 2017
+              </div>
+              <p class="description-experience">
+                In a large project, my mission was to handle pointing system for
+                arriving children at nursery
+              </p>
+              <div class="jobs">
+                <span>Main jobs :</span>
+                <ul>
+                  <li class="job">
+                    Management of arriving kids for the day, authentication and
+                    pointing interface for parents and nurses
+                  </li>
+                  <li class="job">
+                    Recording of information for bill management
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <div class="tools">
+                  <span>
+                    Tools : CVS, intern tools for UI
+                  </span>
+                </div>
+                <div class="name">Internship + summer job</div>
+                <div class="more">1.5 months + 3 months</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="image blackground"
+              src="./img/micasys-logo.png"
+              srcset="./img/micasys-logo.png 2x"
+              alt="Micasys logo"
+            />
+            <div class="details">
+              <div class="poste">.NET / WPF developer</div>
+              <div class="more-details">
+                May 2018 - August 2018
+              </div>
+              <p class="description-experience">
+                Generation tool to produce pdf charts on existing reports,
+                designed to be adaptive to every report of the application
+              </p>
+              <div class="jobs">
+                <span>Main jobs :</span>
+                <ul>
+                  <li class="job">
+                    Conception & development of the tool to be the most flexible
+                    possible
+                  </li>
+                  <li class="job">
+                    Demonstration of the usage on a real case, the annual
+                    reports
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <div class="tools">
+                  <span>
+                    Tools : Microsoft Visual SourceSafe, SSRS
+                  </span>
+                </div>
+                <div class="name">Internship</div>
+                <div class="more">3.5 months</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-content second-row">
+          <div class="card">
+            <img
+              class="image blackground"
+              src="./img/urbanlab-logo.jpg"
+              srcset="./img/urbanlab-logo.jpg 2x"
+              alt="UrbanLab logo"
+            />
+            <div class="details">
+              <div class="poste">AngularJS developer</div>
+              <div class="more-details">
+                May 2016 - July 2016
+              </div>
+              <p class="description-experience">
+                My mission was to provide a remote control system for all the
+                devices of the presentation space using Raspberry Pi and Arduino
+              </p>
+              <div class="jobs">
+                <span>Main jobs :</span>
+                <ul>
+                  <li class="job">
+                    Selection of the best domotic app to develop depending on
+                    company constraints
+                  </li>
+                  <li class="job">
+                    Module developement on Gladys, a domotic app, to control
+                    smart plugs
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <div class="tools">
+                  <span>
+                    Tools : Git, Arduino, Raspberry Pi 2
+                  </span>
+                </div>
+                <div class="name">Internship</div>
+                <div class="more">1.5 months</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <svg
+        class="bottom-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon fill="white" points="0,0 100,0 0,100"></polygon>
+      </svg> -->
+    </section>
+
+    <section class="skills">
+      <div class="column ">
+        <h2 id="skills">Skills</h2>
+
+        <div class="centered-vertical">
+          <div class="flex bars-wrap waypoint " data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">Java</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">.NET</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">React</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">Angular</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">SQL</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Node.js</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:45%">
+                <div class="tag bold flex">PHP</div>
+              </div>
+              <span>45%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Conception</div>
+              </div>
+              <span>75%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:35%">
+                <div class="tag bold flex">Management</div>
+              </div>
+              <span>35%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:30%">
+                <div class="tag bold flex">C</div>
+              </div>
+              <span>30%</span>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="school" id="education">
+      <div class="column ">
+        <div id="timeline-content">
+          <h2 id="education-title">Education</h2>
+
+          <ul class="timeline">
+            <li class="event" data-date="2018 - 2020">
+              <h3>Master's Degree</h3>
+              <p>MIAGE - Grenoble Alpes University - Grenoble - France</p>
+            </li>
+            <li class="event" data-date="2017 - 2018">
+              <h3>Bachelor's Degree</h3>
+              <p>
+                Bachelor MIAGE - Grenoble Alpes University - Grenoble - France
+              </p>
+            </li>
+            <li class="event" id="date" data-date="2015 - 2017">
+              <h3>BTEC Higher National Degree</h3>
+              <p></p>
+              <p>BTS SIO (IT) - Vienne - Grenoble Alpes University - France</p>
+            </li>
+
+            <li class="event" data-date="2013 - 2015">
+              <h3>High school Degree</h3>
+
+              <p>
+                Science High school degree - Lycée Galilée - Vienne - France
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 100 102"
+        height="75"
+        width="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        class="svgcolor-light"
+      >
+        <path d="M0 0 L50 100 L100 0 Z" fill="#191a1d" stroke="#191a1d"></path>
+      </svg>
+      <div class="container flex">
+        <div class="resume">
+          <h2>If you want to get my resume you can download it here :</h2>
+          <a
+            href="./CV.pdf"
+            target="_blank"
+            class="btn btn-primary button btn-lg"
+            >Here's my resume !
+          </a>
+        </div>
+      </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
     <script>
       setTimeout(() => {
         document.querySelector(".heading").classList.add("animate");
       }, 500);
+    </script>
+
+    <script>
+      $(function() {
+        var isMobile;
+        if (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+        ) {
+          isMobile = true;
+        }
+        // }
+
+        // SCROLL ANIMATIONS
+        function onScrollInit(items, elemTrigger) {
+          console.log("Scroll baby");
+          var offset = $(window).height() / 1.6;
+          items.each(function() {
+            var elem = $(this),
+              animationClass = elem.attr("data-animation"),
+              animationDelay = elem.attr("data-delay");
+
+            elem.css({
+              "-webkit-animation-delay": animationDelay,
+              "-moz-animation-delay": animationDelay,
+              "animation-delay": animationDelay
+            });
+
+            console.log(animationClass);
+            var trigger = elemTrigger ? trigger : elem;
+
+            trigger.waypoint(
+              function() {
+                console.log("waypoint !!!!");
+                elem.addClass("animated").addClass(animationClass);
+                if (elem.get(0).id === "gallery") mixClear(); //OPTIONAL
+              },
+              {
+                triggerOnce: true,
+                offset: offset
+              }
+            );
+          });
+        }
+
+        setTimeout(function() {
+          onScrollInit($(".waypoint"));
+        }, 10);
+      });
     </script>
   </body>
 </html>
